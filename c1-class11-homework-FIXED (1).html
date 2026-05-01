@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>C1 Job Skills 2 - Class 11: Networking at a Job Fair — Phrasal Verbs</title>
+<style>*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',sans-serif;background:#5B5091;min-height:100vh;padding:20px}
+.container{max-width:860px;margin:0 auto}
+.header,.card{background:#fff;border-radius:18px;padding:28px;margin-bottom:18px}
+.header{text-align:center}
+.header h1{color:#5B5091;font-size:1.55em;margin-bottom:6px}
+.header p{color:#777}
+.section{display:none}.section.active{display:block}
+label{font-weight:600;color:#333;display:block;margin-bottom:8px}
+input[type="text"],select,textarea{width:100%;padding:14px;border:2px solid #e0e0e0;border-radius:12px;font-size:16px;font-family:inherit}
+textarea{min-height:160px;resize:vertical}
+input[type="text"]:focus,select:focus,textarea:focus{outline:none;border-color:#5B5091}
+.btn{background:#5B5091;color:#fff;border:none;padding:14px 28px;border-radius:12px;font-size:16px;font-weight:600;cursor:pointer;width:100%;margin-top:12px}
+.btn:hover{background:#4a4080}.btn-orange{background:#F5A623}
+.progress{height:8px;background:#e0e0e0;border-radius:4px;margin-bottom:18px}
+.progress-bar{height:100%;background:#F5A623;border-radius:4px}
+.reading-box,.question,.feedback,.transcript-box,.tip-box{background:#f8f9fa;border-radius:12px;padding:18px;margin-top:14px;border:1px solid #eee}
+.reading-box{border-left:4px solid #5B5091;line-height:1.7}
+.question h4{margin-bottom:12px;color:#333}
+.option{padding:12px;border:2px solid #e0e0e0;border-radius:10px;cursor:pointer;margin-top:8px;display:flex;gap:10px;align-items:center}
+.option:hover{border-color:#5B5091;background:#f8f6ff}.option.selected{border-color:#5B5091;background:#f0edff}
+.circle{width:18px;height:18px;border:2px solid #ccc;border-radius:50%;flex-shrink:0}
+.option.selected .circle{background:#5B5091;border-color:#5B5091}
+.word-bank{display:flex;flex-wrap:wrap;gap:10px;padding:15px;background:#f5f5f5;border-radius:12px;margin-top:10px}
+.word{background:#fff;padding:10px 14px;border-radius:8px;cursor:pointer;border:2px solid #e0e0e0}
+.word.selected{border-color:#5B5091;background:#f0edff}.word.used{opacity:.4;pointer-events:none}
+.drop-row{display:flex;gap:12px;align-items:center;margin-top:10px}
+.drop-def{flex:1;background:#f8f9fa;padding:12px;border-radius:8px}
+.drop-target{min-width:130px;min-height:44px;border:2px dashed #ccc;border-radius:8px;padding:10px;text-align:center;cursor:pointer}
+.drop-target.filled{border-style:solid;border-color:#5B5091;background:#f8f6ff}
+.record-btn{width:84px;height:84px;border-radius:50%;background:#fff;border:3px solid #5B5091;cursor:pointer;margin:18px auto;display:flex;align-items:center;justify-content:center}
+.record-btn.recording{border-color:#ef4444;animation:pulse 1.4s infinite}
+.record-dot{width:24px;height:24px;background:#5B5091;border-radius:50%}
+.record-btn.recording .record-dot{background:#ef4444;border-radius:4px;width:20px;height:20px}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(239,68,68,.4)}50%{box-shadow:0 0 0 15px rgba(239,68,68,0)}}
+.timer{text-align:center;font-size:28px;font-weight:700;color:#5B5091}
+.status{text-align:center;color:#666;margin-top:8px}
+audio{width:100%;margin-top:14px}.hidden{display:none}
+.score-card{background:linear-gradient(135deg,#5B5091,#7B6DB5);border-radius:20px;padding:35px;color:#fff;text-align:center}
+.score-big{font-size:4em;font-weight:700}
+.scores{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:18px}
+.scores>div{background:rgba(255,255,255,.15);border-radius:12px;padding:10px}
+.scores label{font-size:.75em;color:#fff;opacity:.9}.scores span{font-size:1.3em;font-weight:700;display:block}
+.small{color:#777;margin-top:8px;font-size:14px}
+.note{background:#fff7e8;border:1px solid #f3d796;color:#7a5b00;border-radius:12px;padding:12px;margin-top:12px}
+.tip-box strong{color:#5B5091}
+@media(max-width:700px){.scores{grid-template-columns:repeat(3,1fr)} .drop-row{flex-direction:column;align-items:stretch}}
+.btn-back{background:#f3f4f6;color:#5B5091;border:1px solid #d1d5db;padding:6px 14px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:4px;margin-bottom:12px;font-family:inherit}
+.btn-back:hover{background:#e5e7eb}
+
+.option.correct-reveal{background:#dcfce7 !important;border-color:#22c55e !important;color:#166534}
+.option.correct-reveal::after{content:" ✓";font-weight:700;color:#16a34a}
+.option.wrong-reveal{background:#fee2e2 !important;border-color:#ef4444 !important;color:#991b1b}
+.option.wrong-reveal::after{content:" ✗";font-weight:700;color:#dc2626}
+.option.review-locked{pointer-events:none;cursor:default}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>C1 Job Skills 2 - Class 11: Networking at a Job Fair — Phrasal Verbs</h1>
+<p style="color:#888;font-size:0.95em">Week 6 - Networking at a Job Fair - Phrasal Verbs and Recruitment Vocabulary</p>
+</div>
+<div class="section active" id="start">
+<div class="card">
+<label>Your Full Name</label>
+<input type="text" id="studentName" placeholder="Enter your name...">
+<input type="hidden" id="teacherName" value="">
+<label>Your Class</label>
+<select id="className" style="width:100%;padding:14px;border:2px solid #e0e0e0;border-radius:12px;font-size:16px;margin-bottom:15px" onchange="setTeacher(this)">
+  <option value="">-- Select your class --</option>
+  <optgroup label="Hector Amaya">
+    <option value="3095" data-teacher="Hector Amaya">3095 -- Mon/Wed 8:30 PM (Hector)</option>
+    <option value="3100" data-teacher="Hector Amaya">3100 -- Tue/Thu 6:30 PM (Hector)</option>
+  </optgroup>
+</select>
+<button class="btn" onclick="startQuiz()">Start Homework &#8594;</button>
+<div class="note">This homework focuses on job-fair etiquette, recruitment vocabulary, and phrasal verbs.</div>
+</div>
+</div>
+
+<div class="section" id="s1">
+<div class="card">
+<div class="progress"><div class="progress-bar" style="width:20%"></div></div>
+<h2>1. Reading</h2>
+<div class="reading-box"><p><strong>Navigating a Job Fair</strong></p><p>Job fairs bring together employers and job seekers in one place. To make the most of the experience, candidates should prepare in advance — researching companies they want to approach and tailoring their resume for each one.</p><p>At the event, first impressions matter. A confident handshake, clear eye contact, and a well-rehearsed pitch can help you stand out from the crowd. Recruiters often ask candidates to hand in their resume and then follow up by email within a day or two.</p><p>Phrasal verbs are commonly used in job fair conversations. A recruiter might say they are looking into expanding their team, or that they have taken on several new graduates recently. Knowing these phrases helps you sound natural and professional during recruitment conversations.</p></div>
+<div id="readingQuestions"></div>
+<button class="btn" onclick="checkS1()">Continue &#8594;</button>
+</div>
+</div>
+<div class="section" id="s2">
+<div class="card">
+<button type="button" class="btn-back" onclick="showSection('s1')">← Back</button>
+<div class="progress"><div class="progress-bar" style="width:40%"></div></div>
+<h2>2. Vocabulary</h2>
+<p class="small">Match each word or phrase to its correct meaning.</p>
+<div class="word-bank" id="wordBank"></div>
+<div id="vocabDrops"></div>
+<button class="btn" onclick="checkS2()">Continue &#8594;</button>
+</div>
+</div>
+<div class="section" id="s3">
+<div class="card">
+<button type="button" class="btn-back" onclick="showSection('s2')">← Back</button>
+<div class="progress"><div class="progress-bar" style="width:60%"></div></div>
+<h2>3. Writing</h2>
+<p class="small"><strong>Recruitment Vocabulary and Phrasal Verbs:</strong> Write 7–9 sentences summarizing a job-fair conversation with a recruiter. Use at least three phrasal verbs naturally.</p>
+<textarea id="writing" placeholder="Example: I attended a job fair last week and approached a recruiter from a marketing firm. I handed in my resume and explained my background. She looked into the open positions and suggested I follow up by email..."></textarea>
+<p class="small" style="text-align:right">Words: <span id="wc">0</span></p>
+<div class="tip-box"><strong>Grammar tip:</strong> Phrasal verbs can be separable or inseparable. <em>Separable</em>: the object can go between verb and particle — <em>Hand in your resume</em> or <em>Hand your resume in</em>. <em>Inseparable</em>: the object always follows the full phrasal verb — <em>Look into the company</em> (NOT: look the company into).</div>
+<div id="wFeedback" class="feedback hidden"></div>
+<button class="btn" id="wBtn" onclick="checkWriting()">Get Feedback &#8594;</button>
+<button class="btn hidden" id="wNext" onclick="showSection('s4')">Continue &#8594;</button>
+</div>
+</div>
+<div class="section" id="s4">
+<div class="card">
+<button type="button" class="btn-back" onclick="showSection('s3')">← Back</button>
+<div class="progress"><div class="progress-bar" style="width:80%"></div></div>
+<h2>4. Speaking</h2>
+<p>Speak for 45–60 seconds as if you were introducing yourself to a recruiter at a job fair and asking about a position. Use at least two phrasal verbs naturally.</p>
+<div class="record-btn" id="recBtn" onclick="toggleRec()"><div class="record-dot"></div></div>
+<div class="timer" id="timer">0:00</div>
+<div class="status" id="recStatus">Click to start recording</div>
+<audio id="audio" controls class="hidden"></audio>
+<div id="transcriptBox" class="transcript-box hidden"></div>
+<div id="sFeedback" class="feedback hidden"></div>
+<button class="btn" id="sBtn" onclick="checkSpeaking()">Continue &#8594;</button>
+</div>
+</div>
+<div class="section" id="s5">
+<div class="card">
+<button type="button" class="btn-back" onclick="showSection('s4')">← Back</button>
+<div class="progress"><div class="progress-bar" style="width:100%"></div></div>
+<h2>5. Grammar</h2>
+<div id="grammarQuestions"></div>
+<button class="btn btn-orange" onclick="submitFinal()">Submit Homework &#10003;</button>
+</div>
+</div>
+<div class="section" id="results">
+<div class="score-card">
+<p style="opacity:.85">Homework Complete!</p>
+<div class="score-big" id="finalPct">0%</div>
+<p id="studentDisplay"></p>
+<div class="scores">
+<div><label>Reading</label><span id="scL">0/3</span></div>
+<div><label>Vocab</label><span id="scV">0/6</span></div>
+<div><label>Writing</label><span id="scW">0/20</span></div>
+<div><label>Speaking</label><span id="scS">0/20</span></div>
+<div><label>Grammar</label><span id="scG">0/8</span></div>
+</div>
+<button type="button" class="btn" onclick="reviewGrammar()" style="background:#f3f4f6;color:#5B5091;border:1px solid #d1d5db;margin-bottom:10px">📝 Review Your Grammar Answers</button><button class="btn btn-orange" style="margin-top:20px" id="submitBtn" onclick="submitToTeacher()">Finish &#8594;</button>
+<div id="submitStatus" style="display:none;margin-top:16px;background:#f0fdf4;border:2px solid #22c55e;border-radius:12px;padding:16px;text-align:center;color:#15803d"></div>
+</div>
+</div>
+</div>
+<script>
+let submitted=false;
+function isRealSpeech(t){if(!t||!t.trim())return false;var w=t.trim().split(' ').filter(Boolean);return w.length>=3;}
+function setTeacher(sel){const opt=sel.options[sel.selectedIndex];document.getElementById('teacherName').value=opt?(opt.getAttribute('data-teacher')||''):''}
+const SESSION='11';
+let name='',scores={l:0,v:0,w:0,s:0,g:0},writingText='',spokenText='';
+let selectedWord=null,isRec=false,recTime=0,recTimer=null,recognition=null;
+let readingAnswers=[],grammarAnswers=[];
+const readingQBank=[{"q": "What is the main purpose of a job fair?", "opts": ["To sign employment contracts", "To connect job seekers with recruiters from multiple companies", "To take skills tests"], "correct": 1}, {"q": "What does 'follow up' mean after a job fair?", "opts": ["Leave early", "Contact the recruiter again to express continued interest", "Delete your resume"], "correct": 1}, {"q": "Which phrasal verb means to give your resume to a recruiter?", "opts": ["Hand in", "Drop out", "Take over"], "correct": 0}, {"q": "What does 'stand out' mean in a job fair context?", "opts": ["Leave the event", "Be more noticeable or impressive than others", "Reject an offer"], "correct": 1}, {"q": "What is an elevator pitch at a job fair?", "opts": ["A tour of the building", "A brief, confident introduction of yourself and your goals", "A formal job interview"], "correct": 1}];
+const vocabPairs=[{"word": "recruiter", "def": "a person whose job is to find candidates for positions"}, {"word": "hand in", "def": "to give something to someone in authority (e.g. a resume)"}, {"word": "follow up", "def": "to contact someone again after an initial meeting"}, {"word": "stand out", "def": "to be noticeably different or better than others"}, {"word": "look into", "def": "to investigate or research something"}, {"word": "opening", "def": "an available job position at a company"}, {"word": "pitch", "def": "a short persuasive speech introducing yourself or an idea"}, {"word": "take on", "def": "to accept or begin a new responsibility or role"}];
+const grammarQBank=[{"q": "She _____ her resume to three different recruiters.", "opts": ["handed in", "handing out", "looked into"], "correct": 0}, {"q": "He decided to _____ the company before the job fair.", "opts": ["look into", "taking over", "drops out of"], "correct": 0}, {"q": "You should always _____ with a recruiter within 48 hours.", "opts": ["follow up", "stand out", "take on"], "correct": 0}, {"q": "Which sentence uses a phrasal verb correctly?", "opts": ["She handed in her resume to the recruiter.", "She handed her resume in to the recruiter.", "Both A and B are correct."], "correct": 2}, {"q": "Which phrasal verb is SEPARABLE?", "opts": ["look into", "hand in", "drop out"], "correct": 1}, {"q": "He _____ among the candidates because of his confidence.", "opts": ["stood out", "took over", "looked into"], "correct": 0}, {"q": "The company is _____ new graduates this quarter.", "opts": ["taking on", "follow up", "standing out"], "correct": 0}, {"q": "Which sentence is correct?", "opts": ["She looked the company into.", "She looked into the company.", "She looked it into."], "correct": 1}];
+function shuffle(arr){for(let i=arr.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[arr[i],arr[j]]=[arr[j],arr[i]];}return arr;}
+function showSection(id){document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo(0,0);}
+function startQuiz(){
+  name=document.getElementById('studentName').value.trim();
+  if(!name){alert('Please enter your name');return;}
+  if(!document.getElementById('className').value){alert('Please select your class');return;}
+  setTeacher(document.getElementById('className'));
+  try{initQuestions();}catch(e){console.log('initQ err:',e);}showSection('s1');
+}
+function sel(el){el.parentElement.querySelectorAll('.option').forEach(o=>o.classList.remove('selected'));el.classList.add('selected');}
+function initQuestions(){
+  const rQs=shuffle([...readingQBank]).slice(0,3);let rHTML='';
+  rQs.forEach((q,i)=>{const opts=q.opts.map((t,idx)=>(({text:t,isCorrect:idx===q.correct})));shuffle(opts);readingAnswers[i]=opts.findIndex(o=>o.isCorrect);rHTML+=`<div class="question"><h4>${i+1}. ${q.q}</h4>`;opts.forEach((opt,j)=>rHTML+=`<div class="option" onclick="sel(this)" data-v="${j}"><div class="circle"></div>${opt.text}</div>`);rHTML+='</div>';});
+  document.getElementById('readingQuestions').innerHTML=rHTML;
+  let bankHTML='',dropHTML='';const pairs=shuffle([...vocabPairs]).slice(0,6);const words=shuffle(pairs.map(p=>p.word));
+  words.forEach(w=>bankHTML+=`<div class="word" onclick="pickWord(this)">${w}</div>`);
+  pairs.forEach(p=>dropHTML+=`<div class="drop-row"><div class="drop-def">${p.def}</div><div class="drop-target" data-a="${p.word}" onclick="dropWord(this)"></div></div>`);
+  document.getElementById('wordBank').innerHTML=bankHTML;document.getElementById('vocabDrops').innerHTML=dropHTML;
+  const gQs=shuffle([...grammarQBank]).slice(0,8);let gHTML='';
+  gQs.forEach((q,i)=>{const opts=q.opts.map((t,idx)=>(({text:t,isCorrect:idx===q.correct})));shuffle(opts);grammarAnswers[i]=opts.findIndex(o=>o.isCorrect);gHTML+=`<div class="question" data-c="${grammarAnswers[i]}"><h4>${i+1}. ${q.q}</h4>`;opts.forEach((opt,j)=>gHTML+=`<div class="option" onclick="sel(this)" data-v="${j}"><div class="circle"></div>${opt.text}</div>`);gHTML+='</div>';});
+  document.getElementById('grammarQuestions').innerHTML=gHTML;
+}
+function checkS1(){try{let c=0;document.querySelectorAll('#readingQuestions .question').forEach((q,i)=>{const s=q.querySelector('.option.selected');if(s&&parseInt(s.dataset.v)===readingAnswers[i])c++;});scores.l=c;}catch(e){}finally{showSection('s2');}}
+function pickWord(el){if(el.classList.contains('used'))return;document.querySelectorAll('.word').forEach(w=>w.classList.remove('selected'));el.classList.add('selected');selectedWord=el;}
+function dropWord(target){
+  // If target already has a word, release it back to the bank
+  if(target.classList.contains('filled')){
+    var prevText=target.textContent.trim();
+    document.querySelectorAll('.word').forEach(function(w){
+      if(w.textContent.trim()===prevText && w.classList.contains('used')){
+        w.classList.remove('used');
+      }
+    });
+    target.textContent='';
+    target.classList.remove('filled');
+    // If a new word was selected, place it now in the just-freed target
+    if(selectedWord){
+      target.textContent=selectedWord.textContent;
+      target.classList.add('filled');
+      selectedWord.classList.add('used');
+      selectedWord.classList.remove('selected');
+      selectedWord=null;
+    }
+    return;
+  }
+  if(!selectedWord)return;
+  target.textContent=selectedWord.textContent;
+  target.classList.add('filled');
+  selectedWord.classList.add('used');
+  selectedWord.classList.remove('selected');
+  selectedWord=null;
+}
+function checkS2(){try{let c=0;document.querySelectorAll('.drop-target').forEach(t=>{if(t.textContent===t.dataset.a)c++;});scores.v=c;}catch(e){}finally{showSection('s3');}}
+document.addEventListener('DOMContentLoaded',function(){var we=document.getElementById('writing');if(we)we.addEventListener('input',function(){var wc=document.getElementById('wc');if(wc)wc.textContent=this.value.trim().split(' ').filter(Boolean).length;});});
+function checkWriting(){
+  writingText=document.getElementById('writing').value;
+  const text=writingText.toLowerCase();
+  const words=text.trim().split(/\s+/).filter(Boolean);
+  const wordCount=words.length;
+  if(wordCount===0){scores.w=0;document.getElementById('wFeedback').innerHTML='<b>Score: 0/20</b><br>Please write something to receive a writing score.';document.getElementById('wFeedback').classList.remove('hidden');document.getElementById('wBtn').classList.add('hidden');document.getElementById('wNext').classList.remove('hidden');return;}
+  let score=14;
+  const phrasal=['hand in','follow up','stand out','look into','take on','drop out','take over','come across','brush up','reach out','set up','sign up','work out','find out'];
+  const foundPV=phrasal.filter(x=>text.includes(x)).length;
+  if(foundPV>=3) score+=4; else if(foundPV>=2) score+=3; else if(foundPV>=1) score+=2;
+  const recVocab=['recruiter','job fair','opening','position','opportunity','pitch','resume','candidate','networking','introduction','interview','hire'];
+  score+=Math.min(2,Math.floor(recVocab.filter(x=>text.includes(x)).length));
+  if(wordCount>=60) score+=1;
+  scores.w=Math.min(20,Math.max(12,Math.round(score)));
+  document.getElementById('wFeedback').innerHTML='<b>Score: '+scores.w+'/20</b><br>Great work! This score reflects your use of phrasal verbs and recruitment vocabulary. Your teacher will give detailed feedback in class.';
+  document.getElementById('wFeedback').classList.remove('hidden');
+  document.getElementById('wBtn').classList.add('hidden');
+  document.getElementById('wNext').classList.remove('hidden');
+}
+function toggleRec(){if(!isRec) startRec(); else stopRec();}
+function startRec(){
+  var SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+  if(!SR){alert('Speech recognition not supported. Please use Chrome or Safari.');return;}
+  spokenText='';
+  var box=document.getElementById('transcriptBox');
+  if(box){box.textContent='Listening...';box.style.display='block';box.style.visibility='visible';box.classList.remove('hidden');}
+  isRec=true;recTime=0;
+  document.getElementById('recBtn').classList.add('recording');
+  document.getElementById('recStatus').textContent='Recording... Click again to stop';
+  recTimer=setInterval(function(){recTime++;document.getElementById('timer').textContent=Math.floor(recTime/60)+':'+String(recTime%60).padStart(2,'0');},1000);
+  recognition=new SR();
+  recognition.continuous=false;recognition.interimResults=true;recognition.lang='en-US';
+  recognition.onstart=function(){document.getElementById('recStatus').textContent='Microphone active — speak now';};
+  recognition.onresult=function(e){
+    var interim='';
+    for(var i=e.resultIndex;i<e.results.length;i++){
+      if(e.results[i].isFinal)spokenText+=e.results[i][0].transcript+' ';
+      else interim+=e.results[i][0].transcript;
+    }
+    var tb=document.getElementById('transcriptBox');
+    if(tb){tb.textContent=(spokenText+interim).trim()||'Listening...';tb.style.display='block';tb.style.visibility='visible';tb.classList.remove('hidden');}
+  };
+  recognition.onerror=function(e){
+    var st=document.getElementById('recStatus');
+    if(e.error==='not-allowed'||e.error==='permission-denied'){
+      if(st)st.textContent='Microphone blocked — allow access in your browser and try again.';
+      isRec=false;clearInterval(recTimer);document.getElementById('recBtn').classList.remove('recording');
+    } else {if(st)st.textContent='Error: '+e.error+' — tap to try again';}
+  };
+  recognition.onend=function(){if(isRec){try{recognition.start();}catch(err){}}};
+  try{recognition.start();}catch(e){
+    document.getElementById('recStatus').textContent='Could not start: '+e.message;
+    isRec=false;clearInterval(recTimer);
+  }
+}
+function stopRec(){
+  isRec=false;clearInterval(recTimer);
+  if(recognition){try{recognition.stop();}catch(e){} recognition=null;}
+  document.getElementById('recBtn').classList.remove('recording');
+  document.getElementById('recStatus').textContent='Recording saved!';
+  document.getElementById('sBtn').disabled=false;
+}
+
+function checkSpeaking(){
+  var text=spokenText.toLowerCase();
+  var score=recTime>=12?8:recTime>=7?5:2;
+  var items=["recruiter", "job fair", "hand in", "follow up", "stand out", "look into", "take on", "position", "opportunity", "bring in", "count on", "move up", "resume", "pitch", "opening", "screening"];
+  score+=Math.min(6,items.filter(function(x){return text.includes(x);}).length)*2;
+  scores.s=Math.min(20,score);
+  document.getElementById('sFeedback').innerHTML='<b>Score: '+scores.s+'/20</b><br>Speaking is scored on coherence, use of relevant vocabulary, and length.';
+  document.getElementById('sFeedback').classList.remove('hidden');
+  showSection('s5');
+}
+
+function submitFinal(){
+  let c=0;
+  document.querySelectorAll('#grammarQuestions .question').forEach((q)=>{
+    const s=q.querySelector('.option.selected');
+    const a=parseInt(q.dataset.c);
+    if(s&&parseInt(s.dataset.v)===a)c++;
+    const correctOpt=q.querySelector('.option[data-v="'+a+'"]');
+    if(correctOpt)correctOpt.classList.add('correct-reveal');
+    if(s&&parseInt(s.dataset.v)!==a){s.classList.add('wrong-reveal');}
+    q.querySelectorAll('.option').forEach(o=>o.classList.add('review-locked'));
+  });
+  scores.g=c;
+  const submitBtn=document.querySelector('#s5 .btn-orange');
+  if(submitBtn)submitBtn.style.display='none';
+  const s5Card=document.querySelector('#s5 .card');
+  if(s5Card && !document.getElementById('reviewContinueBtn')){
+    const cb=document.createElement('button');
+    cb.id='reviewContinueBtn';
+    cb.className='btn btn-orange';
+    cb.style.marginTop='15px';
+    cb.textContent='Continue to Results →';
+    cb.onclick=function(){showSection('results');};
+    s5Card.appendChild(cb);
+  }
+  const total=scores.l+scores.v+scores.w+scores.s+scores.g;
+  document.getElementById('finalPct').textContent=Math.round(total/57*100)+'%';
+  document.getElementById('studentDisplay').textContent=name;
+  document.getElementById('scL').textContent=scores.l+'/3';
+  document.getElementById('scV').textContent=scores.v+'/6';
+  document.getElementById('scW').textContent=scores.w+'/20';
+  document.getElementById('scS').textContent=scores.s+'/20';
+  document.getElementById('scG').textContent=scores.g+'/8';
+  showSection('results');
+}
+function reviewGrammar(){showSection('s5');}
+function submitToTeacher(){
+  if(submitted)return;submitted=true;
+  var btn=document.getElementById('submitBtn')||document.querySelector('.btn-orange');
+  if(btn){btn.disabled=true;btn.textContent='Submitting...';}
+  var total=scores.l+scores.v+scores.w+scores.s+scores.g;
+  var formData=new FormData();
+  formData.append('entry.154629934',name);
+  formData.append('entry.771629595',document.getElementById('className')?document.getElementById('className').value:'');
+  formData.append('entry.1564061356','11');
+  formData.append('entry.1994438750',scores.l+'/3');
+  formData.append('entry.1169985852',scores.v+'/6');
+  formData.append('entry.66378887',scores.w+'/20');
+  formData.append('entry.665897330',scores.s+'/20');
+  formData.append('entry.1528226896',scores.g+'/8');
+  formData.append('entry.543147037',Math.round(total/57*100)+'%');
+  formData.append('entry.301386877',writingText||'');
+  formData.append('entry.1035810181',spokenText||'No transcript captured');
+  formData.append('entry.1451249480',document.getElementById('teacherName')?document.getElementById('teacherName').value:'Hector Amaya');
+  fetch('https://docs.google.com/forms/d/e/1FAIpQLSdrVV8m2p8QcgXK-ifK2H6By1kwAdcPm-Yp5SyB6DBgfOTiGw/formResponse',{method:'POST',mode:'no-cors',body:formData})
+    .then(function(){if(btn){btn.textContent='Submitted!';btn.style.background='#22c55e';}var st=document.getElementById('submitStatus');if(st){st.textContent='Homework submitted! Your teacher received your work.';st.style.display='block';st.style.color='#15803d';}})
+    .catch(function(){submitted=false;if(btn){btn.disabled=false;btn.textContent='Failed - Tap to Retry';btn.style.background='#ef4444';}});
+}
+
+</script>
+</body>
+</html>
