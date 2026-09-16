@@ -162,7 +162,7 @@ audio{width:100%;margin-top:14px}.hidden{display:none}
 let submitted=false;
 function setTeacher(sel){const opt=sel.options[sel.selectedIndex];document.getElementById('teacherName').value=opt?(opt.getAttribute('data-teacher')||''):''}
 const SESSION='11';
-let name='',scores={l:0,v:0,w:0,s:0,g:0},writingText='',spokenText='';
+let name='',scores={l:0,v:0,w:0,s:0,g:0},writingText='',spokenText='';try{window.scores=scores;}catch(e){}
 let selectedWord=null,isRec=false,recTime=0,recTimer=null,recognition=null;
 let readingAnswers=[],grammarAnswers=[];
 const readingQBank=[{"q": "What is the main purpose of a job fair?", "opts": ["To sign employment contracts", "To connect job seekers with recruiters from multiple companies", "To take skills tests"], "correct": 1}, {"q": "What does 'follow up' mean after a job fair?", "opts": ["Leave early", "Contact the recruiter again to express continued interest", "Delete your resume"], "correct": 1}, {"q": "Which phrasal verb means to give your resume to a recruiter?", "opts": ["Hand in", "Drop out", "Take over"], "correct": 0}, {"q": "What does 'stand out' mean in a job fair context?", "opts": ["Leave the event", "Be more noticeable or impressive than others", "Reject an offer"], "correct": 1}, {"q": "What is an elevator pitch at a job fair?", "opts": ["A tour of the building", "A brief, confident introduction of yourself and your goals", "A formal job interview"], "correct": 1}];
@@ -516,7 +516,7 @@ try{
     document.body.appendChild(bar);
     document.getElementById('sqa-fresh').onclick=function(){localStorage.removeItem(KEY);bar.remove();};
     document.getElementById('sqa-resume').onclick=function(){try{
-      for(var k in st.g){try{window[k]=st.g[k];}catch(e){}}
+      for(var k in st.g){try{if(window[k]&&typeof window[k]==='object'&&st.g[k]&&typeof st.g[k]==='object'&&!Array.isArray(window[k])){for(var kk in st.g[k])window[k][kk]=st.g[k][kk];}else{window[k]=st.g[k];}}catch(e){}}
       for(var id in st.h){var el=document.getElementById(id);if(el)el.innerHTML=st.h[id];}
       var fs=fields();(st.f||[]).forEach(function(v,i){if(fs[i]!==undefined){try{fs[i].value=v;}catch(e){}}});
       var wc=document.getElementById('wc'),wr=document.getElementById('writing');if(wc&&wr)try{wc.textContent=wr.value.trim().split(/\s+/).filter(Boolean).length;}catch(e){}
