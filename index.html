@@ -232,7 +232,7 @@ async function checkWriting(){
   btn.disabled=true; btn.textContent='Grading... ✏️';
   const sp=`You are Angela, a warm and encouraging English teacher grading C1-level adult ESL writing. Homework #11: Networking at a Job Fair — Phrasal Verbs. TASK: 7-9 sentences summarizing a job-fair conversation with a recruiter, using at least 3 phrasal verbs naturally. GRAMMAR: separable phrasal verbs (hand in/hand in resume OR hand resume in — both OK); inseparable (look into the company — NOT look the company into). Common job-fair phrasal verbs: hand in, follow up, stand out, look into, take on, bring in, count on, move up, reach out, set up, go over, come across. CRITERIA (out of 20): Content/Task (0-6): job-fair conversation with recruiter, 3+ phrasal verbs used naturally. Grammar (0-6): phrasal verb forms correct, past tense for summary, professional register. Vocab (0-4): recruiter/position/opening/opportunity/resume/pitch/screening/qualifications. Structure (0-4): coherent summary — intro, highlights, next steps. FLAG: inseparable PV with object in middle (give correction); fewer than 3 PVs (name which found, encourage more); informal register; capitalization. TONE: warm, encouraging, light emojis, corrections as reminders, end with encouragement about professional communication. OUTPUT ONLY valid JSON no fences: {"score":<0-20>,"feedback":"<HTML <b>Score: X/20</b> then 2-4 bullets • with <br> under 120 words>"}`;
   try{
-    const r=await fetch("https://api.anthropic.com/v1/messages",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({model:"claude-sonnet-4-20250514",max_tokens:1000,system:sp,messages:[{role:"user",content:"Grade this C1 writing:\n\n\""+raw+"\""}]})});
+    const r=await fetch("https://ponilnhyehnzycspksah.supabase.co/functions/v1/oral-interview",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({token:"sqa-placement-2026-secure-94kL2",model:"claude-sonnet-4-20250514",max_tokens:1000,system:sp,messages:[{role:"user",content:"Grade this C1 writing:\n\n\""+raw+"\""}]})});
     const d=await r.json();
     const p=JSON.parse(d.content.map(i=>i.text||"").join("").replace(/```json|```/g,"").trim());
     scores.w=Math.min(20,Math.max(0,Math.round(p.score)));
@@ -240,8 +240,8 @@ async function checkWriting(){
     fb.innerHTML=p.feedback; fb.classList.remove('hidden');
     btn.classList.add('hidden'); document.getElementById('wNext').classList.remove('hidden');
   }catch(e){
-    scores.w=wordCount>=50?14:wordCount>=30?11:7;
-    document.getElementById('wFeedback').innerHTML="<b>Score: "+scores.w+"/20</b><br>• Good effort! Use at least 3 phrasal verbs naturally and check separable vs inseparable usage. 😊";
+    scores.w=0;
+    document.getElementById('wFeedback').innerHTML="<b>✅ Your writing was saved.</b><br>Your teacher will read it and give you a score. 😊";
     document.getElementById('wFeedback').classList.remove('hidden');
     btn.classList.add('hidden'); document.getElementById('wNext').classList.remove('hidden');
   }
@@ -293,7 +293,7 @@ async function checkSpeaking(){
   document.getElementById('recStatus').textContent='Grading... ✏️';
   const sp=`Angela, C1 teacher. HW11 speaking: job-fair conversation with recruiter, phrasal verbs used naturally. Score /20: Fluency+Length(0-6), Content-job fair conversation+2-3 phrasal verbs(0-6), Vocab+Grammar-phrasal verbs+recruitment vocabulary(0-4), Coherence-intro+highlights+next steps(0-4). Warm tone, emojis, genuine opening compliment about professional communication, 1-2 suggestions, encouragement. JSON only: {"score":<0-20>,"feedback":"<HTML <b>Score:X/20</b> 2-3 bullets • <br> under 100w>"}`;
   try{
-    const r=await fetch("https://api.anthropic.com/v1/messages",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({model:"claude-sonnet-4-20250514",max_tokens:800,system:sp,messages:[{role:"user",content:"Duration: "+recTime+"s. Transcript: \""+raw+"\""}]})});
+    const r=await fetch("https://ponilnhyehnzycspksah.supabase.co/functions/v1/oral-interview",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({token:"sqa-placement-2026-secure-94kL2",model:"claude-sonnet-4-20250514",max_tokens:800,system:sp,messages:[{role:"user",content:"Duration: "+recTime+"s. Transcript: \""+raw+"\""}]})});
     const p=JSON.parse((await r.json()).content.map(i=>i.text||"").join("").replace(/```json|```/g,"").trim());
     scores.s=Math.min(20,Math.max(0,Math.round(p.score)));
     document.getElementById('sFeedback').innerHTML=p.feedback;document.getElementById('sFeedback').classList.remove('hidden');showSection('s5');
